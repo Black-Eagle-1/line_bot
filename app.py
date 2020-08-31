@@ -51,7 +51,14 @@ def handle_message(event):
         r = '我的年紀不是人類能計算出來的'
     elif '你是誰' in msg:
         r = '我是機器人~'
-
+    elif '天氣' in msg:
+        r = '全台天氣:https://www.cwb.gov.tw/V8/C/ ，獲得縣市天氣資訊請打[城市名稱]+[天氣]'
+    elif msg == '台北天氣':
+        r = '台北天氣:https://www.cwb.gov.tw/V8/C/W/County/County.html?CID=63'
+    elif msg == '新北天氣'
+        r = '新北天氣:https://www.cwb.gov.tw/V8/C/W/County/County.html?CID=65'
+    elif msg == '所有指令':
+        r = '所有指令:', /n, 'hi, 你吃飯了嗎', '你幾歲', '你是誰', '天氣', '台北天氣', '新北天氣' 
 
     line_bot_api.reply_message(
         event.reply_token,
