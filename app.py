@@ -51,7 +51,7 @@ def handle_message(event):
         r = '我的年紀不是人類能計算出來的'
     elif '你是誰' in msg:
         r = '我是機器人~'
-    elif '天氣' in msg:
+    elif msg == '天氣':
         r = '全台天氣:https://www.cwb.gov.tw/V8/C/ ，獲得縣市天氣資訊請打[城市名稱]+[天氣]'
     elif msg == '台北天氣':
         r = '台北天氣:https://www.cwb.gov.tw/V8/C/W/County/County.html?CID=63'
