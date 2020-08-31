@@ -58,7 +58,7 @@ def handle_message(event):
     elif msg == '新北天氣':
         r = '新北天氣:https://www.cwb.gov.tw/V8/C/W/County/County.html?CID=65'
     elif msg == '所有指令':
-        r = '所有指令:', /n, 'hi, 你吃飯了嗎', '你幾歲', '你是誰', '天氣', '台北天氣', '新北天氣' 
+        r = '所有指令:hi, 你吃飯了嗎, 你幾歲, 你是誰, 天氣, 台北天氣, 新北天氣'
 
     line_bot_api.reply_message(
         event.reply_token,
